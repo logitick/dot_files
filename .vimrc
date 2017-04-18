@@ -2,7 +2,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 set nowrap
-set list listchars=tab:▹\ ,trail:·,extends:>,precedes:<,nbsp:%,eol:¬
+set list listchars=tab:▸\ ,trail:·,extends:>,precedes:<,nbsp:%,eol:¬
 set list
 set shiftwidth=4
 set tabstop=4
@@ -25,6 +25,7 @@ Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'stanangeloff/php.vim'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'flazz/vim-colorschemes'
 
 
 
@@ -39,3 +40,6 @@ map <C-e> :NERDTreeToggle<CR>
 
 " airline
 let g:airline#extensions#tabline#enabled = 1
+
+set t_Co=256
+colorscheme crayon
